@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 14px;
+}
+body{
+    background: url("./images/bg-stars.svg");
+    background-color: hsl(235, 16%, 14%);
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.hills{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+.hills img{
+    width: 100%;
+    height: 100%;
+}
+h1{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.socials > figure img{
+    width: 100%;
+    height: 100%;
+}
+.socials > figure img:hover{
+    filter: brightness(0) saturate(100%) invert(56%) sepia(85%) saturate(3015%) hue-rotate(318deg) brightness(101%) contrast(101%);
+}
+.socials > figure{
+    width: 30px;
+    height: 30px;
+}
+.timer{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-evenly;
+}
+.countdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.flip-card {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(180deg,hsl(236, 21%, 26%, 0.6) 50%, hsl(236, 21%, 26%) 50%);
+  border-radius: 12px;
+  box-shadow: 0 10px 20px hsl(234, 17%, 12%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.number {
+  font-size: 5rem;
+  font-weight: 700;
+  color: hsl(345, 95%, 68%);
+  letter-spacing: -2px;
+  user-select: none;
+}
+
+.card-split {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: hsl(236, 21%, 26%);
+  transform: translateY(-50%);
+}
+
+.card-split::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-color: hsl(235, 16%, 14%);
+  border-radius: 50%;
+}
+
+.card-split::after {
+  content: '';
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-color: hsl(235, 16%, 14%);
+  border-radius: 50%;
+}
+.label {
+  color: hsl(237, 18%, 59%);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 6px;
+  text-indent: 6px;
+}
+@media (max-width: 850px){
+    .timer{
+        width: 100%;
+    }
+    h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+}
