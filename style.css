@@ -124,8 +124,17 @@ h1{
     .timer{
         width: 100%;
     }
+    .hills{
+        height: 30%;
+    }
     h1{
         font-size: 3rem;
         text-align: center;
+    }
+    .flip-card{
+        width: 100%;
+    }
+    .countdown-container{
+        gap: unset;
     }
 }
