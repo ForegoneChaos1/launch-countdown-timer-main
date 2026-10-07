@@ -127,6 +127,9 @@ h1{
     .hills{
         height: 30%;
     }
+    .timer{
+        justify-content: center;
+    }
     h1{
         font-size: 3rem;
         text-align: center;
@@ -136,5 +139,7 @@ h1{
     }
     .countdown-container{
         gap: unset;
+        width: 100%;
+        padding: 0 10px;
     }
 }
